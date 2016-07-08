@@ -1,0 +1,19 @@
+{
+  "name": "mikser-webdav",
+  "version": "1.0.2",
+  "description": "Access your Mikser documents using WebDAV",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almero-digital-marketing/mikser-webdav.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/almero-digital-marketing/mikser-webdav/issues"
+  },
+  "homepage": "https://github.com/almero-digital-marketing/mikser-webdav#readme",
+  "dependencies": {
+    "jsDAV": "github:almero-digital-marketing/jsDAV"
+  }
+}
