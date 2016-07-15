@@ -18,7 +18,7 @@ module.exports = function(mikser) {
 			let server = jsDAV.createServer({
 			    node: mikser.config.webdav.map((webdavFolder) => jsDAV_FS_Directory.new(path.join(mikser.options.workingFolder, webdavFolder))),
 			    locksBackend: jsDAV_Locks_Backend_FS.new(path.join(mikser.config.runtimeFolder, 'webdav')),
-			    plugins: []
+			    plugins: [require('./help')]
 			}, port);
 			return {
 				server: server
