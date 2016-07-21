@@ -9,7 +9,7 @@ var jsDAV_FS_Directory = require("jsDAV/lib/DAV/backends/fs/directory");
 module.exports = function(mikser) {
 	if (cluster.isWorker || mikser.config.webdav === false) return;
 	let debug = mikser.debug('webdav');
-	jsDAV.debugMode = mikser.options.debugInclude.indexOf('webdav') != -1;
+	jsDAV.debugMode = mikser.options.debugInclude && mikser.options.debugInclude.indexOf('webdav') != -1;
 
 	mikser.config.webdav = mikser.config.webdav || [mikser.config.documentsFolder.replace(mikser.options.workingFolder, '')];
 	if (typeof mikser.config.webdav == 'string') mikser.config.webdav = [mikser.config.webdav];

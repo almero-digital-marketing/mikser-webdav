@@ -1,6 +1,6 @@
 {
   "name": "mikser-webdav",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Access your Mikser documents using WebDAV",
   "main": "index.js",
   "repository": {
